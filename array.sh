@@ -1,9 +1,9 @@
 #!/bin/bash
 IFS= read -r line; 
-IFS=' ' read -ra my_array <<< "$line"
+IFS=' ' read -ra array <<< "$line"
 
 count=0
-for i in "${my_array[@]}"
+for i in "${array[@]}"
 do
     ((count=count+1))
 done
